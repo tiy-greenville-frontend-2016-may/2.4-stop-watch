@@ -1,3 +1,20 @@
+(function(){
+  'use strict';
+
+  var startButton = document.getElementById('start-button');
+
+  console.log(startButton);
+
+  function startButtonHandler(){
+    alert('you clicked on me!');
+  }
+
+  startButton.addEventListener('click', startButtonHandler);
+}());
+
+
+/*
+Begining Demo
 
 document.getElementById('title').textContent = 'New Title';
 document.querySelector('h1').textContent = 'My Cool Title';
@@ -19,3 +36,4 @@ function myCoolCalculation(firstNumber, secondNumber){
 myCoolCalculation(10, 5);
 
 myCoolCalculation(20, 20);
+*/

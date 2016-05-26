@@ -1,0 +1,9 @@
+.hours::after,
+.minutes::after{
+  content: ":";
+}
+
+.start{
+  background-color: green;
+  outline: none;
+}
