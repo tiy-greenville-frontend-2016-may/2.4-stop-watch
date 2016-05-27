@@ -27,14 +27,22 @@
   */
   function toggleButton(){
     currentText = startButton.textContent;
+    var randomNumber = '10';
+
+    hoursColorCode = hours
+
+    colorCode = hoursColorCode + minutesColorCode + secondsColorCode // AB CD 33
 
     /* if statements are how we can control when certain code runs */
     if(currentText == 'Start'){
       startButton.textContent = 'Stop';
-      startButton.style.backgroundColor = 'red';
+      startButton.style.backgroundColor = '#BBBBBB';
+      startButton.style.backgroundColor = '#BBBB' + secondsColorCode;
+      startButton.style.backgroundColor = '#' + colorCode;
+
     } else{
       startButton.textContent = 'Start';
-      startButton.style.backgroundColor = 'green';
+      startButton.style.backgroundColor = '#DDDDDD';
     }
   }
 
